@@ -1,49 +1,143 @@
-body {font-family: 'Questrial', sans-serif;
+	/* SET UP ROWS/COLUMNS USING GRID AREA NAMES */
+			#name { grid-area: sidebar; }
+			#contact { grid-area: sidebar; }
+			#image { grid-area: sidebar; }
+			#objective { grid-area: sidebar; }
+			#main { grid-area: main; }
+            #skills { grid-area: sidebar; }
+
+#layout { 
+				display: grid;
+				/* rows = height/vertical, columns = width/horizontal */
+                grid-template-rows: [name] 12em [image] 250px [contact] 130px [objective] 270px [skills] 1fr;
+				grid-template-columns: [sidebar] 350px [main] 110px;
+				/*grid-template-areas: "header header header" "ads main links" "footer footer footer";*/
+			}
+	       
+            #name { 
+				grid-row-start: -1;  
+				grid-row-end: 1;
+			}
+
+			#contact { 
+				grid-row-start: 3;  
+				grid-row-end: 3;
+			}
+
+			#image { 
+				grid-row-start: 2;  
+				grid-row-end: 2;
+			}
+
+			#objective {  
+				grid-row-start: 4;  
+				grid-row-end: 4;
+			}
+            
+            #skills { 
+				grid-row-start: 5;  
+				grid-row-end: 5;
+			}
+
+			#main { 
+				grid-row-start: 1;  
+				grid-row-end: 8; 
+				grid-column-start: 4;  
+				grid-column-end: 4;
+            }
+
+/* aethestic*/
+
+            #name { 
+				background-color: black;
+                text-align: center;
+
+			}
+
+			#contact { 
+				background-color: black;
+                text-align: center;
+			}
+
+			#image { 
+				background-color: black;
+                text-align: center;
+			}
+
+			#objective {  
+				background-color: black;
+                text-align: center;
+			}
+            
+            #skills { 
+				background-color: black;
+                text-align: center;
+			}
+
+            #main {background-image: url(splash.jpg);
+                padding-left: 20px;
+            }
+
+		/* #name { background-color: red; }
+			#contact { background-color: orange; }
+			#image { background-color: green; }
+			#objective { background-color: blue; }
+			#skills { background-color: pink; }
+            #main { background-color: purple; } */
+
+
+body {font-family: 'Pontano Sans';
         background-color: aliceblue;
-        border-style: solid;
-        border-color: gray;
-        border-radius: 50px;
-        text-align: center;
-        padding: 50px;
-        padding-left: 300px;
-        padding-right: 300px;
-        margin: 60px 60px 60px 60px;
-        color: grey;
+        text-align: left;
+        
+        margin: 0px 70px 0px 70px;
+        color: black;
         font-size: 18px;
 }
 
-h1 {font-family: 'Hind', sans-serif;
+h1 {font-family: 'Bebas Neue';
     font-size: 70px;
-    color: black;
+    color: lavender;
     text-shadow: 3px 3px #647687;
     letter-spacing: -2px;
+    margin-top: 38px;
+    line-height: 70px;
 }
 
 h2 {font-weight: 400;
     font-size: 45px;
 }
 
-img {width: 210px;
-    border-radius: 50px;
+img {width: 175px;
+    border: 2px #647687;
+    border-style: double;
 }
 
 ul {list-style-position: inside;
 }
 
-#top {color: black;
+#top {color: lavender;
     font-size: 18px;
+    
 }
 
 .title {color:black;
         font-size: 20px;
-        border-style: solid;
-        border-width: 8px 3px 2px 8px;
-        border-radius: 8px 8px 8px 8px;
-        padding: 3px 3px 3px 3px;
+        margin-top: 45px;
+        margin-bottom: -2px;
+   
         display: inline-block;
 }
 
-#mid { font-size: 18px;
-        color: black;
+.title2 {color: lavender;
 }
 
+.title3 {color: gray;
+}
+
+
+#mid { font-size: 18px;
+        color: lavender;
+}
+
+/* can i change background color for sidebar to fit entire page/section, can i create line to seperate sidebar from main content*/
