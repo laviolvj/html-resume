@@ -92,11 +92,11 @@ body {font-family: 'Pontano Sans';
         
         margin: 0px 70px 0px 70px;
         color: black;
-        font-size: 18px;
+        font-size: 16px;
 }
 
 h1 {font-family: 'Bebas Neue';
-    font-size: 70px;
+    font-size: 60px;
     color: lavender;
     text-shadow: 3px 3px #647687;
     letter-spacing: -2px;
@@ -108,7 +108,7 @@ h2 {font-weight: 400;
     font-size: 45px;
 }
 
-img {width: 175px;
+img {width: 160px;
     border: 2px #647687;
     border-style: double;
 }
@@ -117,7 +117,7 @@ ul {list-style-position: inside;
 }
 
 #top {color: lavender;
-    font-size: 18px;
+    font-size: 16px;
     
 }
 
