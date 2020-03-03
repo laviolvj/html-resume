@@ -10,7 +10,7 @@
 				display: grid;
 				/* rows = height/vertical, columns = width/horizontal */
                 grid-template-rows: [name] 12em [image] 250px [contact] 130px [objective] 270px [skills] 1fr;
-				grid-template-columns: [sidebar] 350px [main] 110px;
+				grid-template-columns: [sidebar] 330px [main] 90px;
 				/*grid-template-areas: "header header header" "ads main links" "footer footer footer";*/
 			}
 	       
@@ -96,7 +96,7 @@ body {font-family: 'Pontano Sans';
 }
 
 h1 {font-family: 'Bebas Neue';
-    font-size: 60px;
+    font-size: 70px;
     color: lavender;
     text-shadow: 3px 3px #647687;
     letter-spacing: -2px;
